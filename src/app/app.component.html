@@ -1,0 +1,40 @@
+<po-modal #modal p-title="PO Modal" p-size="xl">
+
+</po-modal>
+
+<div class="po-wrapper main">
+  <po-toolbar p-title="Aprovar Pedido de Compra"></po-toolbar>
+
+  <po-menu [p-menus]="menus" class="sidemenu">
+    <div *p-menu-header-template class="po-p-2 po-font-title sample-menu-header-text-color">
+      <p>Welcome,</p>
+      <p>
+        <b> John Doe </b>
+      </p>
+    </div>
+    <po-button p-label="PO Button" (p-click)="onClick()"> </po-button>
+  </po-menu>
+  <po-page-default>
+    <po-breadcrumb [p-items]="[
+      { label: 'Pedidos', link: 'portal' },
+      { label: 'Aprovar Pedido de Compra', link: 'breadcrumb' }
+    ]">
+    </po-breadcrumb>
+    <div class="po-row">
+      <po-button-group class="po-md-12" [p-buttons]="attendances"> </po-button-group>
+    </div>
+    <po-table p-container="shadow" [p-columns]="columns" [p-items]="items">
+    </po-table>
+    <po-button p-label="Open modal" (p-click)="modal.open()"> </po-button>
+    <po-chart class="po-lg-12 po-mt-2" p-title="Aprovados/Aguardando Aprovação" [p-series]="coffeeProduction">
+    </po-chart>
+    <po-button p-kind="primary" p-label="Primary Blue" (p-click)="onClick()"></po-button>
+    <po-button p-kind="primary" class="ita_red" p-label="And Red" (p-click)="onClick()"></po-button>
+
+    <po-button p-kind="secondary" class="ita_blue" p-label="Secondary Blue" (p-click)="onClick()"></po-button>
+    <po-button p-kind="secondary" p-label="And Red" (p-click)="onClick()"></po-button>
+
+    <po-button p-kind="tertiary" p-label="Tertiary Blue" (p-click)="onClick()"></po-button>
+    <po-button p-kind="tertiary" class="ita_red" p-label="And Red" (p-click)="onClick()"></po-button>
+  </po-page-default>
+</div>

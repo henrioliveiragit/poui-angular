@@ -1,0 +1,95 @@
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+text {
+    font-family: sans-serif;
+}
+
+div {
+    font-family: sans-serif;
+}
+
+
+po-button[p-kind="primary"] {
+    --color: #274ea9;
+    --color-hover: #2b58bf;
+    --color-pressed: #274ea9;
+    --border-color: #274ea9;
+    --text-color: #ffffff;
+    --border-radius: 14px;
+    --padding: 12px;
+}
+
+po-button[p-kind="primary"].ita_red {
+    --color: #d81d13;
+    --color-hover: #ff3126;
+    --color-pressed: #e9180d;
+    --background-hover: #ff3126;
+    --background-pressed: #ff3126;
+    --border-color: #d81d13;
+    --text-color: #ffffff;
+    --border-radius: 14px;
+    --padding: 12px;
+}
+
+po-button[p-kind="secondary"] {
+    --color: #d81d13;
+    --border-color-hover: #dfe1ec;
+    --background-hover: #ff2a1f;
+    --background-pressed: #ff2e2e;
+    --border-width: 2px;
+
+}
+
+po-button[p-kind="secondary"].ita_blue {
+    --color: #274ea9;
+    --border-color-hover: #dfe1ec;
+    --background-hover: #2b58bf;
+    --background-pressed: #274ea9;
+    --border-width: 2px;
+
+}
+
+po-button[p-kind="tertiary"] {
+    --color: #274ea9;
+    --border-color-hover: #274ea9;
+    --background-hover: #cbc7ff;
+    --background-pressed: #6185ef;
+}
+
+po-button[p-kind="tertiary"].ita_red {
+    --color: #d81d13;
+    --border-color-hover: #dfe1ec;
+    --background-hover: #ff2a1f;
+    --background-pressed: #ff2e2e;
+}
+
+po-button-group {
+    border-color: red;
+}
+
+po-modal {
+    --border-radius: 32px;
+    --border-width: 10px;
+    --opacity-overlay: 0.5;
+    --background: #ffffff;
+    --border-color: #ffffff;
+}
+
+
+
+po-table-column {
+    --background-color-hover: red !important;
+
+}
+
+
+main {}
+
+.sidemenu {
+    --background-color: #eeeefc;
+}
